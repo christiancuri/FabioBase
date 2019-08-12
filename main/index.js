@@ -9,6 +9,6 @@ const app = express();
 app.use(bodyParser.json());
 
 app.listen(process.env.PORT, () => {
-	console.log(`Running in ${process.env.PORT}`);
-	ModuleRoutes.init(app);
+  console.log(`Running in ${process.env.PORT}`);
+  ModuleRoutes.init(app);
 });
