@@ -15,11 +15,6 @@ export default class WalletHelper {
   }
 
   async getTotalBalances(coin) {
-    const a = await this.bitgo
-      .coin(coin)
-      .wallets()
-      .list({});
-    a.wallets.map(item => console.log(item));
     return this.bitgo
       .coin(coin)
       .wallets()
